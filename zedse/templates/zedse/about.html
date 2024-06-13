@@ -1,0 +1,15 @@
+{% extends 'zedse/contact.html' %}
+
+{% block title %}About us{% endblock %}
+
+{% block content %}
+      <div class="features">
+        <h1>Homies</h1>
+        <p>Записи всех желающих</p>
+           {% csrf_token %}
+          <a href="{% url 'friends' %}"> <button class="btn btn-warning">Press</button></a>
+    </div>
+
+
+
+{% endblock %}
